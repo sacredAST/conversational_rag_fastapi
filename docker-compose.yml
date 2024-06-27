@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+  app:
+    build: .
+    container_name: conversational_rag_fastapi
+    ports:
+      - "8000:8000"
