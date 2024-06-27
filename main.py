@@ -98,12 +98,12 @@ async def chat(request: MessageRequest):
 
     output = retriever_chain.invoke({
         "chat_history": chat_history,
-        "input": "What is your past projects?"
+        "input": request.messages[-1].content
     })
 
     response = ChatResponseModel(
         chatID=request.chatID,
-        message=output["answer"]
+        message=output['answer']
     )
 
     return response

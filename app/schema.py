@@ -11,4 +11,4 @@ class MessageRequest(BaseModel):
 
 class ChatResponseModel(BaseModel):
     chatID: Optional[str] = ""
-    message: Message
+    message: Optional[str] = ""

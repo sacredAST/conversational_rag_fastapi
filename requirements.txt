@@ -4,3 +4,5 @@ langchain_openai==0.1.10
 langchain_community==0.2.6
 langchain_mongodb==0.1.6
 pymongo==4.7.3
+pydantic_settings==2.3.4
+sentence-transformers==3.0.1
